@@ -1,11 +1,6 @@
-final int SQUARESIZE = 100;
-Board board;
+class Niwatori extends AbstractKoma {
 
-void setup() {
-  surface.setSize(6*SQUARESIZE, 4*SQUARESIZE);
-  board = new Board();
-}
-
-void draw() {
-  board.draw();
+  Niwatori(String name, int x, int y, int team, boolean active) {
+    super(name, x, y, team, active);
+  }
 }
